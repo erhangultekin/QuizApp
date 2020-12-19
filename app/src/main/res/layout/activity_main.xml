@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="326dp"
+        android:layout_height="0dp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trueButton" />
+
+    <Button
+        android:id="@+id/cheatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:text="CHEAT"
+        app:layout_constraintStart_toStartOf="@+id/previousButton"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="145dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="151dp"
+        android:text="Score : 0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/resetButton" />
+
+    <Button
+        android:id="@+id/trueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="45dp"
+        android:text="True"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/falseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:text="FALSE"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="reset"
+        app:layout_constraintBottom_toTopOf="@+id/scoreTextView"
+        app:layout_constraintEnd_toEndOf="@+id/cheatButton"
+        app:layout_constraintStart_toStartOf="@+id/cheatButton" />
+
+    <ImageView
+        android:id="@+id/previousButton"
+        android:layout_width="74dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="253dp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left" />
+
+    <ImageView
+        android:id="@+id/nextButton"
+        android:layout_width="79dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="81dp"
+        app:layout_constraintBottom_toBottomOf="@+id/previousButton"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/previousButton"
+        app:layout_constraintTop_toTopOf="@+id/previousButton"
+        app:srcCompat="@drawable/right" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
